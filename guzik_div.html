@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(90, 9, 9);
+            display: none;
+        }
+        #d2{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(9, 90, 35);
+            display: none;
+        }
+        #d3{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(9, 59, 90);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="b1">div1</button>
+    <button id="b2">div2</button>
+    <button id="b3">div3</button>
+
+
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+
+    <script>
+        let b1 = document.querySelector("#b1");
+        let b2 = document.querySelector("#b2");
+        let b3 = document.querySelector("#b3");
+
+        let d1 = document.querySelector("#d1");
+        let d2 = document.querySelector("#d2");
+        let d3 = document.querySelector("#d3");
+
+
+        b1.addEventListener("click", function(){
+            d1.style.display = 'block';
+            d2.style.display = 'none';
+            d3.style.display = 'none';
+        });
+
+        b2.addEventListener("click", function(){
+            d2.style.display = 'block';
+            d1.style.display = 'none';
+            d3.style.display = 'none';
+        });
+
+        b3.addEventListener("click", function(){
+            d3.style.display = 'block';
+            d2.style.display = 'none';
+            d1.style.display = 'none';
+        });
+
+
+
+    </script>
+</body>
+</html>
