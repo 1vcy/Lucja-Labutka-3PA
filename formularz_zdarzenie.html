@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Login: </label>
+        <input type="text" id="login">
+        <label>Hasło: </label>
+        <input type="password" id="pswd">
+        <button type="submit">Log in</button>
+    </form>
+    <script>
+        const form = document.querySelector("form")
+        const p =  document.createElement("p")
+        form.addEventListener("submit", function(e){
+            e.preventDefault()
+            const login = document.querySelector("#login")
+            const pswd = document.querySelector("#pswd")
+
+            p.innerHTML = login.value +" "+ pswd.value
+
+            document.body.appendChild(p)
+            form.reset()
+        })
+        
+    </script>
+</body>
+</html>
