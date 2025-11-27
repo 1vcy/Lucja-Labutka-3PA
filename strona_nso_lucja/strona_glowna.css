@@ -1,0 +1,34 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    height: calc(100% - 50px);
+}
+
+#lewa_sekcja {
+    width: 500px;
+    height: 100px;
+    background-color: pink;
+    float: left;
+}
+
+#srodkowa_sekcja {
+    width: 500px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+#prawa_sekcja {
+    width: 500px;
+    height: 100px;
+    background-color: lightblue;
+    float: right;
+}
