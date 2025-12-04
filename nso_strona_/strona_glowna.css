@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    height: 50px;
+    background-color: lightgray;
+}
+.header_guziki{
+    width: 120px;
+    height: 46px;
+    text-align: center;
+    display: inline-block;
+    background-color: lightpink;
+    border: 2px solid palevioletred;
+    position: fixed;
+    top: 0;
+}
+.header_guziki_profil{
+    width: 120px;
+    height: 46px;
+    text-align: center;
+    display: inline-block;
+    background-color: lightpink;
+    border: 2px solid palevioletred;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.header_guziki:hover, .header_guziki_profil:hover{
+    background-color: rgb(184, 77, 112);
+    color: white;
+}
+#logo{
+    height: 50px;
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+}
+
+#lewa_sekcja {
+    width: 400px;
+    height: calc(100% - 50px);
+    background-color: pink;
+    float: left;
+}
+
+#srodkowa_sekcja {
+    width: calc(100% - 800px);
+    height: calc(100% - 50px);
+    background-color: lightgreen;
+    float: left;
+}
+
+#prawa_sekcja {
+    width: 400px;
+    height: calc(100% - 50px);
+    background-color: lightblue;
+    float: right;
+}
